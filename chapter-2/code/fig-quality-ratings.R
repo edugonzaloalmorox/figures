@@ -12,7 +12,7 @@ library(sf)
 library(lubridate)
 
 # select overall care homes 
-care_homes = read_excel("data/raw/01_October_2018_Latest_ratings.xlsx", 
+care_homes = read_excel("chapter-2/data/raw/01_October_2018_Latest_ratings.xlsx", 
                                    sheet = "Locations") %>% 
   clean_names() %>% 
   filter(care_home == "Y") %>%
